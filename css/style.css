@@ -307,7 +307,7 @@ header{
     .header{
         flex-direction: column;
         justify-content: center;
-        width: 90%;
+        width: 100%;
         padding: 0% 3% 0% 3%;
     }
 
@@ -341,8 +341,8 @@ header{
         width: 100%;
     }
 
-    .header-logo img{
-        width: 55%;
+    .logo-content img{
+        width: 40%;
     }
 
     .logo-content{
@@ -359,4 +359,21 @@ header{
         left: 88%;
     }
 
+    .banner h2{
+        width: 90%;
+        margin: 33% 1% 1% 1%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .header-link{
+        font-size: 1.2rem;
+    }
+
+    .banner h2{
+        font-size: 1.8rem;
+        margin: 50% 1% 1% 1%;
+    }
 }
