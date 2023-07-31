@@ -9,28 +9,40 @@
 </head>
 <body>
     <header>
-        <div class="header-logo">
-            <a href="index.html" class="logo-content">
-                <img src="assets/logo-contabil.jpg" alt="Logo da cor vermelha da Estrategia contabil">
-            </a>
-            <input id="checkbox" type="checkbox">
-            <label class="toggle" for="checkbox">
-                <div id="bar1" class="bars"></div>
-                <div id="bar2" class="bars"></div>
-                <div id="bar3" class="bars"></div>
-            </label>
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html" class="logo-content">
+                    <img src="assets/logo-contabil.jpg" alt="Logo da cor vermelha da Estrategia contabil">
+                </a>
+                <input id="checkbox" type="checkbox">
+                <label class="toggle" for="checkbox">
+                    <div id="bar1" class="bars"></div>
+                    <div id="bar2" class="bars"></div>
+                    <div id="bar3" class="bars"></div>
+                </label>
+            </div>
+            <nav class="header-menu">
+                <a href="" class="header-link">SOBRE</a>
+                <a href="" class="header-link">SERVIÇOS</a>
+                <a href="" class="header-link">SOLUÇÕES</a>
+                <a href="" class="header-link">PLANILHAS</a>
+                <a href="" class="header-link">CONTATO</a>
+            </nav>
         </div>
-        <nav class="header-menu">
-            <a href="" class="header-link">SOBRE</a>
-            <a href="" class="header-link">SERVIÇOS</a>
-            <a href="" class="header-link">SOLUÇÕES</a>
-            <a href="" class="header-link">PLANILHAS</a>
-            <a href="" class="header-link">CONTATO</a>
-        </nav>
     </header>
     <section class="main-page">
         <div class="banner">
-            <img src="" alt="">
+            <h2>
+                Eleve seu negócio com contabilidade personalizada, 
+                <br>
+                revolucionando sua gestão empresarial para o sucesso!
+            </h2>
+            <a class="fancy" href="https://w.app/estrategiacontabil" target="_blank">
+                <span class="top-key"></span>
+                <span class="text">FALE COM UM ESPECIALISTA</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a>
         </div>
     </section>
     <section class="top-page">
@@ -45,5 +57,21 @@
     <footer>
         <a href=""></a>
     </footer>
+    <div class="btn-home">
+        <a href="#" class="btn-content" style="opacity: 0;">
+            <img src="assets/seta.png" alt="Imagem de uma seta apontada para cima" class="img-seta">
+        </a>
+    </div>
+    <script src="scripts/main.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 </body>
 </html>
