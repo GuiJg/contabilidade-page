@@ -16,17 +16,18 @@ body{
 header{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9;
-    width: 80%;
     margin: 4%;
     padding: 0% 8% 0% 5%;
     box-shadow: 0px 0px 10px 5px #0000005d;
@@ -117,7 +118,7 @@ header{
 .header-link{
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #000;
     transition: 0.5s;
 }
@@ -142,9 +143,7 @@ header{
 }
 
 .main-page{
-    position: absolute;
-    background-color: #fb0429;
-    height: 100%;
+    background-color: #fb042b;
     width: 100%;
     top: 0;
     left: 0;
@@ -154,6 +153,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    padding: 2%;
     gap: 2em;
 }
 
@@ -172,7 +173,7 @@ header{
 
 .fancy {
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #faecee;
     border-radius: 0;
     box-sizing: border-box;
     cursor: pointer;
@@ -215,6 +216,7 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    overflow: hidden;
 }
    
 .fancy .top-key {
@@ -223,7 +225,7 @@ header{
     top: -2px;
     left: 0.625rem;
     position: absolute;
-    background: #fb0429;
+    background: #fb042b;
     transition: width 0.5s ease-out, left 0.3s ease-out;
 }
    
@@ -233,7 +235,7 @@ header{
     right: 1.875rem;
     bottom: -2px;
     position: absolute;
-    background: #fb0429;
+    background: #fb042b;
     transition: width 0.5s ease-out, right 0.3s ease-out;
 }
    
@@ -243,13 +245,13 @@ header{
     right: 0.625rem;
     bottom: -2px;
     position: absolute;
-    background: #e8e8e8;
+    background: #fb042b;
     transition: width 0.5s ease-out, right 0.3s ease-out;
 }
    
 .fancy:hover {
     color: white;
-    background: black;
+    background: #000;
 }
    
 .fancy:hover::before {
@@ -270,7 +272,59 @@ header{
 .fancy:hover .bottom-key-1,
 .fancy:hover .bottom-key-2 {
     right: 0;
-    width: 0;
+    width: 0; 
+}
+
+.arrow-scroll{
+    margin-top: 3%;
+    width: 5%;
+    transition: 0.5s;
+    animation: 1s ease-in-out 2s infinite alternate none running icon-move-people;
+}
+
+@keyframes icon-move-people{
+    0%{
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    100%{
+        transform: translate3d(0px, 10px, 10px);
+    }
+}
+
+.arrow-scroll:hover{
+    transform: translateY(5%);
+}
+
+.top-page{
+    display: flex;
+    gap: 10em;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.034));
+    background-color: #090e1f;
+    border: 0.1em solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    padding: 3% 1% 3% 1%;
+    width: 10em;
+    gap: 2em;
+    transition: 0.5s;
+}
+
+.services h2{
+    font-size: 5rem;
+    color: #000;
 }
 
 .btn-home {
@@ -284,7 +338,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fb042b;
+    background: #000000;
     border-radius: 40px;
     width: 4em;
     height: 4em;
@@ -292,7 +346,7 @@ header{
 }
 
 .btn-content:hover{
-    background: #be0622;
+    background: #252525;
     transform: translateY(-5%);
 }
 
@@ -307,7 +361,6 @@ header{
     .header{
         flex-direction: column;
         justify-content: center;
-        width: 100%;
         padding: 0% 3% 0% 3%;
     }
 
@@ -361,7 +414,12 @@ header{
 
     .banner h2{
         width: 90%;
-        margin: 33% 1% 1% 1%;
+        margin: 30% 1% 1% 1%;
+    }
+
+    .arrow-scroll{
+        margin: 0;
+        width: 10%;
     }
 
 }
@@ -374,6 +432,11 @@ header{
 
     .banner h2{
         font-size: 1.8rem;
-        margin: 50% 1% 1% 1%;
+        margin: 45% 1% 1% 1%;
+    }
+
+    .arrow-scroll{
+        margin: 0;
+        width: 15%;
     }
 }
