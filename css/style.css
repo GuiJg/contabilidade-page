@@ -51,8 +51,8 @@ header{
 }
 
 .logo-content img{
-    border-radius: 60px;
-    width: 25%;
+    border-radius: 20px;
+    width: 20%;
 }
 
 #checkbox {
@@ -186,7 +186,7 @@ header{
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    padding: 3%;
+    padding: 1%;
     gap: 2em;
 }
 
@@ -194,7 +194,7 @@ header{
     text-align: center;
     width: 70%;
     margin: 20% 1% 1% 1%;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 800;
     color: #fff;
 }
