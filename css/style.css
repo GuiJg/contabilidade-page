@@ -172,7 +172,7 @@ header{
 }
 
 .main-page{
-    background-color: #fb042b;
+    background: linear-gradient(to right,#c90322, #fb042b, #fb1539);
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
     width: 100%;
