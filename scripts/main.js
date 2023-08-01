@@ -17,3 +17,15 @@ const headerMenu = document.querySelector('.header-menu');
       button.style.opacity = '0';
     }
   });
+
+window.addEventListener("scroll", function(){
+  let header = document.querySelector(".header");
+
+  if (this.window.pageYOffset > 0){
+    header.classList.add("sticky");
+  }
+
+  else{
+    header.classList.remove("sticky");
+  }
+});
