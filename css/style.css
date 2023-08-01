@@ -193,7 +193,7 @@ header{
 .banner h2{
     text-align: center;
     width: 70%;
-    margin: 20% 1% 1% 1%;
+    margin: 18% 1% 1% 1%;
     font-size: 1.8rem;
     font-weight: 800;
     color: #fff;
@@ -308,7 +308,7 @@ header{
 }
 
 .arrow-scroll{
-    margin-top: 3%;
+    margin-top: 7%;
     width: 5%;
     transition: 0.5s;
     animation: 1s ease-in-out 2s infinite alternate none running icon-move-people;
