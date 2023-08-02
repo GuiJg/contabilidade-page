@@ -192,14 +192,14 @@ header{
 .text-banner{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     overflow: hidden;
     padding-bottom: 11%;
     gap: 2em;
 }
 
 .text-banner h2{
-    text-align: center;
+    text-align: start;
     width: 70%;
     margin: 7% 1% 1% 1%;
     font-size: 1.8rem;
@@ -210,6 +210,17 @@ header{
 .text-banner img{
     width: 100%;
 }
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner img{
+    width: 450px;
+    height: 400px;
+}
+
 
 .fancy {
     background-color: transparent;
@@ -317,13 +328,12 @@ header{
 
 .arrow-scroll{
     position: absolute;
-    top: 600px;
-    left: 730px;
-    right: 730px;
+    top: 80%;
+    left: 48%;
     padding: 0.3%;
     width: 7%;
     transition: 0.5s;
-    animation: 1s ease-in-out 2s infinite alternate none running icon-move-people;
+    animation: 1s ease-in-out 2s infinite alternate none running icon-move-people; 
 }
 
 @keyframes icon-move-people{
@@ -338,10 +348,6 @@ header{
 
 .arrow-scroll:hover{
     transform: translateY(5%);
-}
-
-.banner img{
-    width: 70%;
 }
 
 .top-page{
@@ -417,6 +423,7 @@ header{
     .header{
         flex-direction: column;
         justify-content: center;
+        border-radius: 0;
         padding: 0% 3% 0% 3%;
     }
 
@@ -463,19 +470,52 @@ header{
         align-items: end;
     }
 
-    .btn-home {
-        top: 85%;
-        left: 88%;
+    .main-page{
+        padding-bottom: 20%;
     }
 
-    .banner h2{
+    .container-banner{
+        flex-direction: column;
+    }
+
+    .text-banner{
+        align-items: center;
+        padding-bottom: 3%;
+    }
+
+    .text-banner h2{
+        text-align: center;
         width: 90%;
-        margin: 30% 1% 1% 1%;
+        margin: 10% 1% 1% 1%;
+    }
+
+    .banner{
+        padding: 10%;
+    }
+
+    .banner img{
+        width: 380px;
+        height: 330px;
     }
 
     .arrow-scroll{
         margin: 0;
         width: 10%;
+        top: 153%;
+        left: 46%;
+    }
+
+    .top-page{
+        text-align: center;
+    }
+
+    .services{
+        justify-content: center;
+    }
+
+    .btn-home {
+        top: 85%;
+        left: 88%;
     }
 
 }
@@ -493,6 +533,23 @@ header{
 
     .arrow-scroll{
         margin: 0;
-        width: 15%;
+        width: 16%;
+        top: 113%;
+        left: 42%;
+    }
+
+    .banner{
+        padding: 10%;
+    }
+
+    .banner img{
+        width: 280px;
+        height: 220px;
+    }
+
+    
+    .btn-home {
+        top: 85%;
+        left: 80%;
     }
 }
