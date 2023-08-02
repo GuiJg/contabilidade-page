@@ -172,33 +172,42 @@ header{
 }
 
 .main-page{
-    background: linear-gradient(to right,#c90322, #fb042b, #fb1539);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#c90322, #fb042b, #fb1539, #fc4764);
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
     width: 100%;
     top: 0;
     left: 0;
+    padding: 7% 1% 1% 1%;
 }
 
-.banner{
+.container-banner{
+    display: flex;
+    padding-top: 8%;
+}
+
+.text-banner{
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    padding: 1%;
+    padding-bottom: 11%;
     gap: 2em;
 }
 
-.banner h2{
+.text-banner h2{
     text-align: center;
     width: 70%;
-    margin: 18% 1% 1% 1%;
+    margin: 7% 1% 1% 1%;
     font-size: 1.8rem;
     font-weight: 800;
     color: #fff;
 }
 
-.banner img{
+.text-banner img{
     width: 100%;
 }
 
@@ -308,7 +317,8 @@ header{
 
 .arrow-scroll{
     margin-top: 7%;
-    width: 5%;
+    padding: 0.3%;
+    width: 7%;
     transition: 0.5s;
     animation: 1s ease-in-out 2s infinite alternate none running icon-move-people;
 }
@@ -325,6 +335,10 @@ header{
 
 .arrow-scroll:hover{
     transform: translateY(5%);
+}
+
+.banner img{
+    width: 70%;
 }
 
 .top-page{
