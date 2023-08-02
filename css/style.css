@@ -316,7 +316,10 @@ header{
 }
 
 .arrow-scroll{
-    margin-top: 7%;
+    position: absolute;
+    top: 600px;
+    left: 730px;
+    right: 730px;
     padding: 0.3%;
     width: 7%;
     transition: 0.5s;
