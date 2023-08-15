@@ -178,7 +178,6 @@ header{
     align-items: center;
     background: linear-gradient(to right,#c90322, #fb042b, #fb1539, #fc4764);
     border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
     width: 100%;
     top: 0;
     left: 0;
@@ -321,30 +320,47 @@ header{
 .about-page{
     display: flex;
     flex-direction: column;
-    gap: 3em;
-    margin: 5% 7%;
+    background-image: url(/assets/background-element.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
 }
 
 .about-page h2{
-    font-size: 2.5rem;
+    font-size: 3em;
+    margin: 5% 7% 3%; 
+}
+
+.about-container{
+    display: flex;
+    width: 60%;
+    margin-left: 7%; 
 }
 
 .service-page{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 5%;
-    gap: 7em;
+    gap: 1em;
 }
 
 .service-page h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
+}
+
+.text{
+    width: 70%;
 }
 
 .services{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    padding: 5% 1% 5% 1%;
     gap: 5em;
 }
 
@@ -363,9 +379,9 @@ header{
     border: 0.1em solid rgba(255, 255, 255, 0.18);
     box-shadow: 1px 5px 10px 1px #2525256c;
     border-radius: 10px;
-    padding: 3% 1% 3% 1%;
+    padding: 2% 1% 2% 1%;
+    width: 18em;
     margin: 1%;
-    width: 20%;
     gap: 2em;
     transition: 0.5s;
 }
@@ -376,6 +392,35 @@ header{
 
 .item h2{
     font-size: 1.5rem;
+}
+
+.item:hover{
+    scale: 1.005;
+    box-shadow: 1px 1px 10px 5px #2525256c;
+}
+
+.division {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #fb042b;
+    margin: 5% 0% 5% 0%;
+    height: 23em;
+}
+
+.division h2{
+    font-size: 2.1rem;
+    color: #fff;
+}
+
+.division p{
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 8%;
+    margin-left: 8%;
 }
 
 .btn-home {
