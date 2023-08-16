@@ -423,6 +423,81 @@ header{
     margin-left: 8%;
 }
 
+.border-btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 1em 2em;
+    margin: 1% 1% 1% 1.3%;
+    width: 25%;
+    transition: background-color 0.8s;
+}
+  
+.border-btn:active {
+    transform: scale(.98);
+}
+
+.border-btn:hover{
+    background-color: #000;
+}
+  
+.border-btn span {
+    position: absolute;
+    background: #fff;
+    transition: .5s;
+}
+  
+.border-btn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 30%;
+}
+  
+.border-btn:hover span:nth-child(1) {
+    height: 100%;
+}
+  
+.border-btn span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 3px;
+}
+  
+.border-btn:hover span:nth-child(2) {
+    width: 100%;
+}
+  
+.border-btn span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 3px;
+    height: 30%;
+}
+  
+.border-btn:hover span:nth-child(3) {
+    height: 100%;
+}
+  
+.border-btn span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    height: 3px;
+}
+  
+.border-btn:hover span:nth-child(4) {
+    width: 100%;
+}
+
 .btn-home {
     position: fixed;
     padding: 1%;
@@ -505,7 +580,7 @@ header{
     }
 
     .main-page{
-        padding-bottom: 20%;
+        padding-bottom: 13%;
     }
 
     .container-banner{
@@ -534,9 +609,24 @@ header{
 
     .arrow-scroll{
         margin: 0;
-        width: 10%;
-        top: 153%;
+        width: 15%;
+        top: 152%;
         left: 46%;
+    }
+
+    .about-page{
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 10% 1% 20% 1%;
+    }
+
+    .about-container{
+        width: 100%;
+    }
+
+    .text{
+        width: 100%;
     }
 
     .service-page{
@@ -545,13 +635,31 @@ header{
 
     .services{
         justify-content: center;
+        padding: 15% 1% 30% 1%;
+    }
+
+    .division{
+        padding: 10% 1% 10% 1%;
+        height: auto;
+        gap: 2em;
+    }
+
+    .border-el-btn{
+        width: 50%;
+        margin: 0;
+        padding: 5% 1% 5% 1%;
+    }
+
+    .border-btn{
+        width: 50%;
+        margin: 0;
+        padding: 5% 1% 5% 1%;
     }
 
     .btn-home {
         top: 85%;
         left: 88%;
     }
-
 }
 
 @media (max-width: 500px) {
@@ -565,11 +673,19 @@ header{
         margin: 45% 1% 1% 1%;
     }
 
+    .main-page{
+        padding-bottom: 20%;
+    }
+
     .arrow-scroll{
         margin: 0;
-        width: 16%;
-        top: 113%;
+        width: 20%;
+        top: 124%;
         left: 42%;
+    }
+
+    .container-banner{
+        gap: 2em;
     }
 
     .banner{
@@ -581,6 +697,31 @@ header{
         height: 220px;
     }
 
+    .text-banner h2{
+        margin-top: 20%;
+    }
+
+    .service-page{
+        padding-top: 13%;
+    }
+    
+    .division{
+        padding: 10% 1% 10% 1%;
+        height: auto;
+        gap: 2em;
+    }
+
+    .border-el-btn{
+        width: 80%;
+        margin: 0;
+        padding: 8% 1% 8% 1%;
+    }
+
+    .border-btn{
+        width: 80%;
+        margin: 0;
+        padding: 8% 1% 8% 1%;
+    }
     
     .btn-home {
         top: 85%;
