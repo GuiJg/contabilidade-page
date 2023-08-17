@@ -848,6 +848,19 @@ header{
         margin: 0;
         padding: 8% 1% 8% 1%;
     }
+
+    .item-choose{
+        width: auto;
+        margin: 2%;
+    }
+
+    .item-choose span{
+        font-size: 1.5rem;
+    }
+
+    .item-choose p{
+        font-size: 0.9rem;
+    }
     
     .btn-home {
         top: 85%;
