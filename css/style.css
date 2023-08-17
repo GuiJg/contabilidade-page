@@ -566,6 +566,60 @@ header{
     width: 100%;
 }
 
+.choose-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 7%;
+}
+
+.choose-page h2{
+    font-size: 3rem;
+}
+
+.container-choose{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 6%;
+    padding: 1%;
+    gap: 5em;
+}
+
+.container-choose img{
+    width: 20%;
+}
+
+.item-choose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.034));
+    border: 0.1em solid rgba(255, 255, 255, 0.18);
+    box-shadow: 1px 5px 10px 1px #2525256c;
+    border-radius: 10px;
+    padding: 5% 2% 5% 2%;
+    width: 30%;
+    transition: 0.5s;
+}
+
+.item-choose:hover{
+    box-shadow: 1px 1px 10px 5px #2525256c;
+}
+
+.item-choose img{
+    width: 40%;
+}
+
+.item-choose span{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 5%;
+}
+
 .btn-home {
     position: fixed;
     padding: 1%;
