@@ -663,6 +663,7 @@ header{
     padding: 0.8rem;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.778);
+    color: #fff;
     transition: border-color 0.5s;
     transition: 0.5s;
     box-shadow: 0.2s;
@@ -683,6 +684,7 @@ header{
 
 .form input:focus,
 .form textarea:focus{
+    color: #000;
     background-color: #faecee;
 }
 
