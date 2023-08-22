@@ -677,6 +677,16 @@ header{
     box-shadow: 0.2s;
 }
 
+.form input::placeholder,
+.form textarea::placeholder{
+    color: #fff;
+}
+
+.form input:focus::placeholder,
+.form textarea:focus::placeholder{
+    color: #3d3838;
+}
+
 .form textarea{
     min-height: 13rem;
     resize: vertical;
