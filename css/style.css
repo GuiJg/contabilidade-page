@@ -48,10 +48,11 @@ header{
 .logo-content{
     display: flex;
     margin: 1%;
+    width: 40%;
 }
 
 .logo-content img{
-    width: 80%;
+    width: 100%;
 }
 
 #checkbox {
@@ -140,8 +141,8 @@ header{
 }
 
 .btn:hover{
-    background-color: #fb042b;
-    border: 1px solid #fb042b;
+    background-color: #253571;
+    border: 1px solid #253571;
     color: #fff;
 }
 
@@ -154,7 +155,7 @@ header{
 }
 
 .header-link:hover{
-    color: #fb042b;
+    color: #253571;
 }
 
 .header-link::after{
@@ -162,7 +163,7 @@ header{
     display: block;
     width: 0%;
     height: 2px;
-    background-color: #fb042b;
+    background-color: #253571;
     transition: width 0.2s ease-in-out, transform 0.4s ease-in-out;
     transform: translateX(0%);
 }
@@ -176,7 +177,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right,#c90322, #fb042b, #fb1539, #fc4764);
+    background: linear-gradient(to right,#1d2957, #253571, #2d418b, #364da4);
     border-bottom-left-radius: 80px;
     width: 100%;
     top: 0;
@@ -420,7 +421,8 @@ header{
     text-align: center;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.034));
     border: 1px solid rgba(255, 255, 255, 0.778);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);    
+    border-radius: 10px;
     padding: 2% 1% 2% 1%;
     width: 18em;
     margin: 1%;
@@ -448,7 +450,7 @@ header{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background-color: #fb042b;
+    background-color: #253571;
     margin: 5% 0% 5% 0%;
     height: 23em;
     padding: 2%;
@@ -584,11 +586,12 @@ header{
 }
 
 .item-choose:hover{
-    box-shadow: 0 0 10px 1px #fb0429;
+    box-shadow: 0 0 10px 1px #253571;
 }
 
-.item-choose img{
+.item-choose svg{
     width: 40%;
+    height: auto;
 }
 
 .item-choose span{
@@ -630,7 +633,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right,#c90322, #fb042b, #fb1539, #fc4764);
+    background: linear-gradient(to right,#1d2957, #253571, #2d418b, #364da4);
     gap: 4em;
 }
 
@@ -761,6 +764,11 @@ footer img{
     color: #fff;
 }
 
+.info img{
+    width: 40%;
+    height: auto;
+}
+
 .div{
     display: flex;
     border-top: 2px solid #faecee;
@@ -780,7 +788,7 @@ footer img{
 }
 
 .menu span{
-    color: #fb042b;
+    color: #253571;
     font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 7%;
@@ -793,7 +801,7 @@ footer img{
 }
 
 .menu a:hover{
-    color: #fb042b;
+    color: #253571;
     transform: translateY(-5%);
 }
 
