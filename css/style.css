@@ -187,6 +187,8 @@ header{
 
 .container-banner{
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 7% 5% 2% 5%;
 }
 
@@ -214,6 +216,7 @@ header{
 
 .banner{
     display: flex;
+    transform: translateY(-10%);
 }
 
 .banner img{
