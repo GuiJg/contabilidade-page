@@ -216,7 +216,6 @@ header{
 
 .banner{
     display: flex;
-    transform: translateY(-10%);
 }
 
 .banner img{
